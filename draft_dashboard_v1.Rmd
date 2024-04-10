@@ -1,0 +1,45 @@
+---
+title: "My Dashbord at DACSS"
+bibliography: testVisual.bib
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Intro {.sidebar}
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @sievert_flexdashboard_2022.
+
+### References
+<div id="refs"></div>
+
+## Column {data-width="450"}
+
+### 10 Most CommonSurnames <!-- a title for plot -->
+
+```{r}
+readRDS("del1fordash1.rds")
+```
+
+### Number of Letters in Common Surnames 
+
+```{r}
+readRDS("del2fordash1.rds")
+```
+
+## Column {data-width="550"}
+
+### Percent White vs. Percent Two or More Races
+
+```{r}
+readRDS("del3fordash1.rds")
+```
+
+### Worst map
+```{r}
+readRDS("del4Draft.rds")
+```

@@ -1,0 +1,111 @@
+
+# clean memory ------------------------------------------------------------
+rm(list = ls())
+
+``
+# read in data ------------------------------------------------------------
+#set working directory
+
+setwd("C:/Users/Matt2/Documents/DACSS/690DV/Lab01")
+
+filename="Names_2010Census.csv"
+namedata=read.csv(filename)
+
+library(tidyverse)
+library(ggrepel)
+
+# see data ----------------------------------------------------------
+
+
+head(namedata)
+
+
+# see data types ----------------------------------------------------------
+
+str(namedata)
+
+
+# cleaning ----------------------
+
+namedata$length = nchar(namedata$name)
+namedata$pctwhite <- replace(namedata$pctwhite, namedata$pctwhite == "(S)", 0)
+namedata$pctwhite <- as.numeric(namedata$pctwhite)
+namedata$pctblack <- replace(namedata$pctblack, namedata$pctblack == "(S)", 0)
+namedata$pctblack <- as.numeric(namedata$pctblack)
+namedata$pctapi <- replace(namedata$pctapi, namedata$pctapi == "(S)", 0)
+namedata$pctapi <- as.numeric(namedata$pctapi)
+namedata$pctaian <- replace(namedata$pctaian, namedata$pctaian == "(S)", 0)
+namedata$pctaian <- as.numeric(namedata$pctaian)
+namedata$pct2prace <- replace(namedata$pct2prace, namedata$pct2prace == "(S)", 0)
+namedata$pct2prace <- as.numeric(namedata$pct2prace)
+namedata$pcthispanic <- replace(namedata$pcthispanic, namedata$pcthispanic == "(S)", 0)
+namedata$pcthispanic <- as.numeric(namedata$pcthispanic)
+
+#Replacing (S) with 0 - any time there are so few people of a particular race with a particular name that the percentage needs suppression for privacy, that's effectively zero
+
+
+# lab items -------------
+
+
+#I switched to head(namedata, 10) because loading was extremely long otherwise
+namedata2 <- head(namedata, 10)
+base= ggplot(data=namedata2) 
+del1Draft= base + geom_bar(aes(x=cum_prop100k))
+del1Draft
+#include axis adjustments
+
+# deliverable 1 ----------------------------------------------------------
+
+library(ggplot2)
+
+base= ggplot(data=namedata2, aes(x= reorder(name, -count), y = count)) 
+del1Draft3= base + geom_bar(fill = "gray", stat = "identity")
+del1Draft3 = del1Draft3 +  theme_minimal() + theme(axis.text.x = element_text(angle = 90), panel.grid.minor = element_blank()) + labs(title = "10 Most Common Surnames", x = "Surname", y = "Number of Occurrences", subtitle = "United States, 2010", caption = "Source: 2010 US Census") + theme(plot.title = element_text(size = 13))
+del1Draft3
+#Trying to do it all at once majorly jammed R, so I restricted it to among the 10 most common names
+#Thought this one looked best without annotation, so I didn't include any
+
+
+
+# save del1Draft ----------------------------------------------------------
+
+saveRDS(del1Draft3, file = "del1fordash1.rds")
+
+
+# deliverable 2 ----------------------------------------------------------
+
+note = "4 of the 10 most common surnames have only 5 letters"
+namedata2$length = nchar(namedata2$name)
+base2= ggplot(data=namedata2, aes(x= length)) 
+del2Draft3= base2 + geom_histogram(binwidth = 1, aes(x= length)) + labs(title = "Number of Letters in 10 Most Common Surnames", x = "Number of Letters in Name", y = "Number of Names", subtitle = "United States, 2010", caption = "Source: 2010 US Census") + theme_minimal() + theme(plot.title = element_text(size=13)) +  annotate(geom = 'text', size = 2.75, label = note, y = -0.1, x = 7, angle = 0)
+del2Draft3
+#note to self: tantamount to, in one line, ggplot(data=namedata2, aes(x= length)) + geom_histogram(binwidth = 1, aes(x= length)) + labs(title = "Number of Letters in Common Surnames", x = "Number of Letters in Name", y = "Number of Names") + theme_minimal() + theme(plot.title = element_text(size=10)) +  annotate(geom = 'text', size = 2.75, label = note, y = -0.1, x = 7, angle = 0)
+
+# save del2Draft ----------------------------------------------------------
+saveRDS(del2Draft3, file = "del2fordash1.rds")
+
+
+# deliverable 3 ----------------------------------------------------------
+
+base5= ggplot(data = namedata3)
+namedata3$labels <- NA
+namedata3$labels[1:10] <- c("Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez")
+namedata3$labels[38] <- c("Nguyen")
+namedata3$labels[77] <- c("Kim")
+namedata3$labels[95] <- c("Patel")
+del3draft12= base5 + theme_minimal() + geom_point(aes(x=pctwhite, y=pct2prace)) + labs(title = "Surnames by Percent White vs. Percent 2+ Races", subtitle = "100 Most Common Surnames, United States, 2010", caption = "Source: 2010 US Census", x = "Percent White", y = "Percent Two or More Races") + theme(plot.title = element_text(size=10), plot.subtitle = element_text(size = 9)) + geom_text_repel(aes(x = pctwhite, y = pct2prace, label = labels))
+del3draft12
+#An idea he had: Label any values that are above a particular value. Can create a new labels column, and if a particular name has a particular x or y value, repeat that in the labels column
+#This works! If so inclined, I might modify to include select outlier names outside the top 10  
+
+
+# save del3Draft ----------------------------------------------------------
+saveRDS(del3draft12, file = "del3fordash1.rds")
+
+
+
+
+
+
+
+#Deleted deliverable 4 material as cleanup prior to v51 - restore it later when  it comes time to actually make deliverable 4
