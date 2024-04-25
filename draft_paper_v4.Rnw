@@ -1,0 +1,81 @@
+\documentclass[a4paper, 12pt]{article}
+\title{This is my work in R}
+\author{ Matt Eckstein\\UMass Amherst\\
+         Amherst, MA, \underline{USA}\\
+        \url{meckstein@umass.edu}}
+\date{\today}  %% manually: \date{Month day, year} 
+\usepackage[natbibapa]{apacite} %% for bibliography
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle 
+\begin{abstract}
+This is an example of an abstract in a paper. This is an example of an abstract in a paper. This is an example of an abstract in a paper. This is an example of an abstract in a paper.This is an example of an abstract in a paper.This is an example of an abstract in a paper.
+\end{abstract}
+
+\newpage
+
+\section{Exploring Data}\label{explo-data} % label for crossref
+
+\subsection{Univariate plots}
+%footnote coming
+This is a section. I will use a footnot now \footnote{This is a footnote.}. I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref. I will soon use cross-ref. I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref. I will soon use cross-ref. I will soon use cross-ref.
+
+
+%cross-ref coming
+I will soon use cross-ref.I will soon use cross-ref: as we see in Figure \ref{fig:theDeli_1}, thta is an ugly barplot.
+
+\begin{figure}[h]
+\centering
+<<theDeli_1, fig=TRUE, echo=FALSE>>=
+readRDS("del1fordash1.rds")
+@
+\caption{Deliverable 1}  %title
+\label{fig:theDeli_1} % for cross-ref
+\end{figure}
+
+But, in Figure \ref{fig:theDeli_2} you may see something even worse.
+
+\begin{figure}[h]
+\centering
+<<theDeli_2, fig=TRUE, echo=FALSE>>=
+readRDS("del2fordash1.rds")
+@
+\caption{Deliverable 2}  %title
+\label{fig:theDeli_2} % for cross-ref
+\end{figure}
+I am doing my best, as recommended in \citet{magallanes_reyes_data_2022}, and \citet{leisch_sweave_2024}. 
+
+\subsection{Bivariate plots}
+
+I only have this ugly one:
+
+\begin{figure}[h]
+\centering
+<<theDeli_3, fig=TRUE, echo=FALSE>>=
+readRDS("del3fordash1.rds")
+@
+\caption{Deliverable 3}  %title
+\label{fig:theDeli_3} % for cross-ref
+\end{figure}
+
+I am doing my best, as recommended in \citet{magallanes_reyes_data_2022}, and \citet{leisch_sweave_2024}.
+
+
+
+%%%%%Code for maps was here before v4. Re-add when draw map
+
+
+\section{Conclusion}
+
+Still so much to learn. But, I am doing my best, as recommended in \citet{magallanes_reyes_data_2022}, and \citet{leisch_sweave_2024}. 
+
+
+
+%%%%% adding bibliography
+\bibliographystyle{apacite} %%style
+%\renewcommand{\refname}{Bibliography}
+\bibliography{testVisual} %% filename
+\end{document} %% nothing after here
+

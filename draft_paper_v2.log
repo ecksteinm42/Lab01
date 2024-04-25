@@ -1,0 +1,310 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.16)  27 FEB 2024 16:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./draft_paper_v2.tex
+(draft_paper_v2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(apacite.sty
+Package: apacite 2012/02/25 v6.01 APA citation
+\c@BibCnt=\count195
+\bibleftmargin=\skip50
+\bibindent=\skip51
+\bibparsep=\skip52
+\bibitemsep=\skip53
+\biblabelsep=\skip54
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip55
+\bibsep=\skip56
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count196
+)
+LaTeX Info: Redefining \BBA on input line 8.
+
+(Sweave.sty
+Package: Sweave 
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count197
+\FV@InFile=\read2
+\FV@TabBox=\box51
+\c@FancyVerbLine=\count198
+\FV@StepNumber=\count199
+\FV@OutFile=\write3
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/ae\ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)))
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 10
+.
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
+\l__pdf_internal_box=\box52
+)
+No file draft_paper_v2.aux.
+\openout1 = `draft_paper_v2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+\c@maskedRefs=\count267
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/apacite\english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen143
+\scratchbox=\box53
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen144
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks19
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (draft_paper_v2-concordance.tex)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 13.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 1
+3.
+
+(C:\Users\Matt2\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [1
+
+{C:/Users/Matt2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+
+
+LaTeX Warning: Reference `fig:theDeli_1' on page 2 undefined on input line 28.
+
+<draft_paper_v2-theDeli_1.pdf, id=11, 433.62pt x 433.62pt>
+File: draft_paper_v2-theDeli_1.pdf Graphic file (type pdf)
+<use draft_paper_v2-theDeli_1.pdf>
+Package pdftex.def Info: draft_paper_v2-theDeli_1.pdf  used on input line 32.
+(pdftex.def)             Requested size: 312.00119pt x 312.01428pt.
+
+LaTeX Warning: Reference `fig:theDeli_2' on page 2 undefined on input line 37.
+
+<draft_paper_v2-theDeli_2.pdf, id=12, 433.62pt x 433.62pt>
+File: draft_paper_v2-theDeli_2.pdf Graphic file (type pdf)
+<use draft_paper_v2-theDeli_2.pdf>
+Package pdftex.def Info: draft_paper_v2-theDeli_2.pdf  used on input line 41.
+(pdftex.def)             Requested size: 312.00119pt x 312.01428pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `magallanes_reyes_data_2022' on page 2 undefin
+ed on input line 45.
+
+
+Package natbib Warning: Citation `leisch_sweave_2024' on page 2 undefined on in
+put line 45.
+
+<draft_paper_v2-theDeli_3.pdf, id=13, 433.62pt x 433.62pt>
+File: draft_paper_v2-theDeli_3.pdf Graphic file (type pdf)
+<use draft_paper_v2-theDeli_3.pdf>
+Package pdftex.def Info: draft_paper_v2-theDeli_3.pdf  used on input line 53.
+(pdftex.def)             Requested size: 312.00119pt x 312.01428pt.
+[2 <./draft_paper_v2-theDeli_1.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `magallanes_reyes_data_2022' on page 3 undefin
+ed on input line 58.
+
+
+Package natbib Warning: Citation `leisch_sweave_2024' on page 3 undefined on in
+put line 58.
+
+<draft_paper_v2-theDeli_4.pdf, id=24, 433.62pt x 433.62pt>
+File: draft_paper_v2-theDeli_4.pdf Graphic file (type pdf)
+<use draft_paper_v2-theDeli_4.pdf>
+Package pdftex.def Info: draft_paper_v2-theDeli_4.pdf  used on input line 68.
+(pdftex.def)             Requested size: 312.00119pt x 312.01428pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `magallanes_reyes_data_2022' on page 3 undefin
+ed on input line 76.
+
+
+Package natbib Warning: Citation `leisch_sweave_2024' on page 3 undefined on in
+put line 76.
+
+No file draft_paper_v2.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[3 <./draft_paper_v2-theDeli_2.pdf>] [4 <./draft_paper_v2-theDeli_3.pdf>]
+[5 <./draft_paper_v2-theDeli_4.pdf>] (draft_paper_v2.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3583 strings out of 474542
+ 57502 string characters out of 5744446
+ 1926978 words of memory out of 5000000
+ 25731 multiletter control sequences out of 15000+600000
+ 593179 words of font info for 101 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,9n,79p,434b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Matt2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmb10.pfb><C:/Users/Matt2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/Matt2/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/Matt2/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/Matt2/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Matt2/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Matt2/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on draft_paper_v2.pdf (5 pages, 490861 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+

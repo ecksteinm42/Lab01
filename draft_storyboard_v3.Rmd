@@ -1,0 +1,49 @@
+---
+title: "Matt Eckstein's 690V Storyboard"
+bibliography: testVisual.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+
+You can find the code for this dashboard at [left off here - make Github]
+
+## Column {.tabset .tabset-fade}
+
+
+### 10 Most CommonSurnames
+
+```{r}
+readRDS("del1fordash1.rds")
+```
+
+
+### Number of Letters in Common Surnames
+
+```{r}
+readRDS("del2fordash1.rds")
+```
+
+### Surnames by Percent White vs. Percent Two or More Races
+
+```{r}
+readRDS("del3fordash1.rds")
+```
+
+
+### Number of Lakes by US State
+
+```{r}
+readRDS("del4fordash1.rds")
+```
+
+
+### References 

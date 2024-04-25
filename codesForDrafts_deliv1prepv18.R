@@ -1,0 +1,124 @@
+
+# clean memory ------------------------------------------------------------
+rm(list = ls())
+
+``
+# read in data ------------------------------------------------------------
+#set working directory
+
+setwd("C:/Users/Matt2/Documents/DACSS/690DV/Lab01")
+
+filename="Names_2010Census.csv"
+namedata=read.csv(filename)
+
+library(tidyverse)
+
+# see data ----------------------------------------------------------
+
+
+head(namedata)
+
+
+# see data types ----------------------------------------------------------
+
+str(namedata)
+
+
+# cleaning ----------------------
+
+namedata$pctwhite <- replace(namedata$pctwhite, namedata$pctwhite == "(S)", 0)
+namedata$pctwhite <- as.numeric(namedata$pctwhite)
+namedata$pctblack <- replace(namedata$pctblack, namedata$pctblack == "(S)", 0)
+namedata$pctblack <- as.numeric(namedata$pctblack)
+namedata$pctapi <- replace(namedata$pctapi, namedata$pctapi == "(S)", 0)
+namedata$pctapi <- as.numeric(namedata$pctapi)
+namedata$pctaian <- replace(namedata$pctaian, namedata$pctaian == "(S)", 0)
+namedata$pctaian <- as.numeric(namedata$pctaian)
+namedata$pct2prace <- replace(namedata$pct2prace, namedata$pct2prace == "(S)", 0)
+namedata$pct2prace <- as.numeric(namedata$pct2prace)
+namedata$pcthispanic <- replace(namedata$pcthispanic, namedata$pcthispanic == "(S)", 0)
+namedata$pcthispanic <- as.numeric(namedata$pcthispanic)
+
+#Replacing (S) with 0 - any time there are so few people of a particular race with a particular name that the percentage needs suppression for privacy, that's effectively zero
+
+
+# lab items -------------
+
+summary(namedata$pctwhite)
+
+theCuts = c(-0.00001, 10, 25, 50, 75, 100)
+theCutsLabels = c("less than 10%", "10 - <25%", "25 - <50%", "50 - <75%", "75 - 100%")
+namedata$pctblackgroup = cut(namedata$pctblack,
+                            breaks = theCuts,
+                            labels = theCutsLabels)
+
+table(namedata$pctblackgroup)
+#When I used 0 instead of a very slight negative quantity as my lower bound, the 0's were excluded
+
+#I switched to head(namedata, 100) because loading was extremely long otherwise
+namedata2 <- head(namedata, 10)
+base= ggplot(data=namedata2) 
+del1Draft= base + geom_bar(aes(x=cum_prop100k))
+del1Draft
+#include axis adjustments
+
+# deliverable 1 ----------------------------------------------------------
+
+library(ggplot2)
+
+base= ggplot(data=namedata2, aes(x= reorder(name, -count), y = count)) 
+del1Draft3= base + geom_bar(fill = "gray", stat = "identity")
+del1Draft3 = del1Draft3 + theme(axis.text.x = element_text(angle = 90)) + labs(title = "10 Most Common Surnames in the United States", x = "Surname", y = "Frequency in USA, 2010") + theme(plot.title = element_text(size = 8.5))
+del1Draft3
+#Trying to do it all at once majorly jammed R, so I restricted it to among the 10 most common names
+
+
+
+# save del1Draft ----------------------------------------------------------
+saveRDS(del1Draft3, file = "del1Draft5.rds")
+
+
+# deliverable 2 ----------------------------------------------------------
+
+base2= ggplot(data=namedata2, aes(x= pctblack)) 
+del2Draft2= base2 + geom_histogram(binwidth = 5, aes(x=prop100k)) + labs(title = "Proportion per 100,000 People of Each of the Top 10 USA Surnames", x = "fill", y = "fill") + scale_x_continuous(breaks = seq(0, 60, by = 5)) + theme(plot.title = element_text(size=8.5))
+del2Draft2
+#example of labs:  + labs(title = "Histogram with Binwidth",
+#x = "Values",
+#y = "Density") Add to end of ggplot after its closing parenthesis
+#Consider respacing axis labels too
+
+
+# save del2Draft ----------------------------------------------------------
+saveRDS(del2Draft2, file = "del2Draft2.rds")
+
+
+# deliverable 3 ----------------------------------------------------------
+
+del3Draft= base + geom_point(aes(x=Student.Teacher.Ratio,
+                                 y=Free.Lunch))
+del3Draft 
+
+# save del3Draft ----------------------------------------------------------
+saveRDS(del3Draft, file = "del3Draft.rds")
+
+
+# deliverable 4  ----------------------------------------------------------
+
+library(sf)
+county_map=sf::read_sf("WA_County_Boundaries.geojson")
+head(county_map)
+head(mydata)
+
+# merge data into map ----------------------------------------------------------
+mydataCounty=aggregate(data=mydata,Free.Lunch~County,FUN = mean)
+myMapLunch=merge(county_map,mydataCounty,by.x='JURISDIC_2',"County")
+
+# prepare plot
+
+base=ggplot(myMapLunch)
+del4Draft=base + geom_sf(aes(fill=Free.Lunch))
+del4Draft
+
+# save del4Draft ----------------------------------------------------------
+saveRDS(del4Draft, file = "del4Draft.rds")

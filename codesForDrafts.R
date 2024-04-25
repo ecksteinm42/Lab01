@@ -6,6 +6,8 @@ rm(list = ls())
 # read in data ------------------------------------------------------------
 #set working directory
 
+setwd("C:/Users/Matt2/Documents/DACSS/690DV/Lab01")
+
 filename="theFile.csv"
 mydata=read.csv(filename)
 
